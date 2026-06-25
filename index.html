@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NinjaAuto - Oficina Mecânica de alto desempenho. Simulador de orçamento online e agendamento rápido de revisões e serviços.">
+  <title>NinjaAuto | Oficina Mecânica Premium</title>
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <a href="#" class="logo" id="header-logo">
+        <i class="fa-solid fa-gears"></i> Ninja<span>Auto</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#simulador">Orçamento</a></li>
+        <li><a href="#agendamento">Agendar Visita</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="section-tag">Performance & Segurança</span>
+        <h1 class="hero-title">Sua Oficina de<span>Confiança Máxima</span></h1>
+        <p class="hero-description">
+          Equipamentos de última geração, mecânicos altamente qualificados e total transparência. Use nosso simulador exclusivo abaixo para planejar sua revisão de forma rápida e justa.
+        </p>
+        <a href="#simulador" class="btn-primary" id="hero-cta-btn"><i class="fa-solid fa-calculator" style="margin-right: 8px;"></i> Simular Orçamento</a>
+      </div>
+      <div class="hero-badge-container">
+        <!-- Pure CSS/SVG industrial accent badge -->
+        <svg viewBox="0 0 100 100" style="width: 100%; max-width: 300px; filter: drop-shadow(var(--shadow-glow));">
+          <polygon points="50,5 95,25 95,75 50,95 5,75 5,25" fill="#1a1a1e" stroke="#ffcc00" stroke-width="4" />
+          <path d="M35,35 L65,35 L65,45 L50,45 L50,55 L65,55 L65,65 L35,65 Z" fill="none" stroke="#ffcc00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <text x="50" y="82" font-family="'Outfit', sans-serif" font-weight="800" font-size="10" fill="#f5f5f7" text-anchor="middle">PREMIUM AUTO</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Highlights -->
+  <section class="services-highlight" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossa Oficina</span>
+        <h2 class="section-title">Especialidades Mecânicas</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-car-battery"></i></div>
+          <h3 class="service-title">Injeção & Elétrica</h3>
+          <p class="service-desc">Diagnóstico eletrônico avançado por scanner para detectar falhas em sensores, baterias e circuitos.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+          <h3 class="service-title">Freios & Suspensão</h3>
+          <p class="service-desc">Substituição de discos, pastilhas, fluido de freio, amortecedores e peças do sistema de direção.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-oil-can"></i></div>
+          <h3 class="service-title">Troca de Óleo</h3>
+          <p class="service-desc">Utilização dos melhores lubrificantes recomendados pelo fabricante para garantir a vida útil do motor.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3 class="service-title">Motor & Câmbio</h3>
+          <p class="service-desc">Retífica completa de motor, reparos em câmbio manual e automático com peças de qualidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulator Section -->
+  <section class="simulator-section" id="simulador">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simulador de Serviços</span>
+        <h2 class="section-title">Simule Seu Orçamento</h2>
+      </div>
+      
+      <div class="simulator-grid">
+        <!-- Form Side -->
+        <div class="simulator-form-side">
+          <div class="form-group">
+            <label class="form-label" for="car-type">1. Tipo do Veículo</label>
+            <select class="form-select" id="car-type">
+              <option value="hatch">Carro Compacto / Hatch</option>
+              <option value="sedan">Sedan Médio</option>
+              <option value="suv">SUV / Crossover</option>
+              <option value="pickup">Pick-up / Utilitário</option>
+              <option value="sport">Esportivo / Importado</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">2. Escolha os Serviços Necessários</label>
+            <div class="services-selection-grid">
+              
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="alignment" checked>
+                <span class="checkmark"></span>
+                <span class="service-label-text">Alinhamento & Balanc.</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="oil">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Troca de Óleo & Filtros</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="brakes">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Pastilhas e Freios</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="suspension">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Suspensão e Pivôs</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="diagnose">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Diagnóstico Eletrônico</span>
+              </label>
+
+              <label class="checkbox-container">
+                <input type="checkbox" class="service-checkbox" value="electrical">
+                <span class="checkmark"></span>
+                <span class="service-label-text">Instalações Elétricas</span>
+              </label>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Result Side -->
+        <div class="simulator-result-side">
+          <div>
+            <h3 class="summary-title">Resumo do Orçamento</h3>
+            <ul class="summary-list" id="summary-items">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+          <div>
+            <div class="total-container">
+              <span class="total-label">Estimativa Total</span>
+              <span class="total-amount" id="total-amount">R$ 0,00</span>
+            </div>
+            <a href="#agendamento" class="btn-primary" style="width: 100%;" id="btn-go-schedule"><i class="fa-solid fa-calendar-check" style="margin-right: 8px;"></i> Prosseguir para Agendamento</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scheduler Section -->
+  <section class="scheduler-section" id="agendamento">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Agendamento Online</span>
+        <h2 class="section-title">Agende Seu Horário</h2>
+      </div>
+
+      <div class="scheduler-container">
+        <!-- Success Alert -->
+        <div class="alert-box" id="success-alert"></div>
+
+        <form id="scheduler-form">
+          <div class="scheduler-grid">
+            <div class="form-group">
+              <label class="form-label" for="client-name">Seu Nome Completo</label>
+              <input type="text" class="form-input" id="client-name" required placeholder="Ex: João da Silva">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="client-phone">Celular com DDD</label>
+              <input type="tel" class="form-input" id="client-phone" required placeholder="Ex: (11) 99999-9999">
+            </div>
+          </div>
+          
+          <div class="scheduler-grid">
+            <div class="form-group">
+              <label class="form-label" for="client-date">Data Desejada</label>
+              <input type="date" class="form-input" id="client-date" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="client-time">Horário Disponível</label>
+              <select class="form-select" id="client-time" required>
+                <option value="08:00">08:00</option>
+                <option value="09:30">09:30</option>
+                <option value="11:00">11:00</option>
+                <option value="13:30">13:30</option>
+                <option value="15:00">15:00</option>
+                <option value="16:30">16:30</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="scheduler-grid full">
+            <div class="form-group">
+              <label class="form-label" for="client-notes">Observações do Problema (Opcional)</label>
+              <input type="text" class="form-input" id="client-notes" placeholder="Ex: Barulho na roda dianteira esquerda ao frear">
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;" id="scheduler-submit-btn">
+            <i class="fa-regular fa-paper-plane" style="margin-right: 8px;"></i> Confirmar Agendamento de Revisão
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <i class="fa-solid fa-gears"></i> Ninja<span>Auto</span>
+      </div>
+      <div>
+        <p>&copy; 2026 NinjaAuto. Todos os direitos reservados. Projeto Portfólio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
